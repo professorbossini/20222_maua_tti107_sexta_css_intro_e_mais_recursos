@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Sizing</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .caixa1, .caixa2 {
+      width: 300px;
+      text-align: justify;
+      background-color: #CCC;
+      border: 1px solid black;
+    }
+
+    .caixa1 {
+      margin-bottom: 0;
+      border: 5px solid black;
+      padding-left: 50px;
+      padding-right: 50px;
+      /* esse é o padrão do navegador */
+      /* box-sizing: content-box; */
+      box-sizing: border-box;
+    }
+
+    .caixa2 {
+      margin-top: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- p.*2 -->
+  <p class="caixa1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolorum cumque eum. Repellendus laboriosam adipisci nulla cum, eligendi delectus repellat maxime sequi alias totam vel sint voluptates temporibus maiores iusto.
+  </p>
+  <p class="caixa2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nemo quos consequatur ipsa officiis sapiente? Magni id culpa architecto deleniti nesciunt quas incidunt ipsum! Deleniti iste pariatur nam ipsum.
+  </p>
+</body>
+</html>

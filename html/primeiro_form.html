@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <!-- esse é um controle de um form -->
+      <label for="primeiroNome">Nome:</label>
+      <input id="primeiroNome" type="text">
+
+      <label>
+        Nome:
+        <input type="text">
+      </label>
+
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input id="sobrenome" type="text">
+
+      <label for="email">E-mail:</label>
+      <input id="email" type="email">
+
+      <label for="telefone">Telefone:</label>
+      <input id="telefone" type="tel">
+
+      <label for="cor">Cor:</label>
+      <input id="cor" type="color">
+
+      <label for="arquivo">Arquivo:</label>
+      <input id="arquivo" type="file">
+
+      <label for="mensagem">Sua mensagem:</label>
+      <textarea id="mensagem" cols="50" rows="10"></textarea>
+
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado">
+        <option value="1">São Paulo</option>
+        <option value="2">Minas Gerais</option>
+        <option value="3">Espírito Santo</option>
+        <option value="4">Rio de Janeiro</option>
+      </select>
+
+      <fieldset>
+        <legend>Qual carro você prefere?</legend>
+        <input type="radio" id="x1" name="veiculo"><label for="x1">X1</label>
+        <input type="radio" id="xc60" name="veiculo"><label for="xc60">XC60</label>
+        <input type="radio" id="q5" name="veiculo"><label for="q5">Q5</label>
+        <input type="radio" id="discovery" name="veiculo"><label for="discovery">Discovery</label>
+        <input type="radio" id="evoque" name="veiculo"><label for="evoque">Evoque</label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>De quais cores você gosta?</legend>
+        <input id="amarelo" type="checkbox"><label for="amarelo">Amarelo</label>
+        <input id="verde" type="checkbox"><label for="verde">Verde</label>
+        <input id="azul" type="checkbox"><label for="azul">Azul</label>
+      </fieldset>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
+
