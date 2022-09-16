@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Float 2</title>
+  <style>
+    body{
+      font-size: 26px;
+    }
+    h1{
+      margin: 0;
+    }
+    article {
+      background-color: aliceblue;
+    }
+
+    .caixa1, .caixa2 {
+      background-color: beige;
+    }
+
+    .caixa1 {
+      float: left;
+      width: 40%;
+    }
+
+    .caixa2 {
+      float: right;
+      width: 40%;
+    }
+
+    footer {
+      background-color: cornflowerblue;
+    }
+
+    article > p::first-letter{
+      font-size: 80px;
+    }
+
+    h1::before {
+      content: "Título da página: "
+    }
+
+    h1::after {
+      content: " 2022"
+    }
+    article::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Lorem, ipsum.</h1>
+    <!-- p.caixa1 -->
+    <p class="caixa1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eius repellat, earum eaque accusantium quaerat distinctio optio qui velit dolorum.
+    </p>
+
+    <!-- p.caixa2 -->
+    <p class="caixa2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur qui explicabo, assumenda non ad quibusdam. Placeat modi enim vel.
+    </p>
+    <!-- <div style="clear: both"></div> -->
+  </article>
+  <footer>Lorem ipsum dolor sit amet.</footer>
+</body>
+</html>
