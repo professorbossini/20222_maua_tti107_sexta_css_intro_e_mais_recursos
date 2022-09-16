@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixo Fluído</title>
+  <style>
+    body {
+      margin: 0;
+      font-size: 32px;
+    }
+    .engenharia, .farmacia, .matematica {
+      /* display: inline-block; */
+      border: 1px solid black;
+      padding: 12px;
+      /* width: 20%;  */
+      height: 80px;
+    }
+    main{
+      border: solid 1px black;
+      /* leiaute fixo */
+      /* width: 1280px; */
+      /* leiaute fluído */
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    @media(min-width: 550px){
+      .engenharia, .farmacia, .matematica {
+        background-color: aliceblue;
+      }
+    }
+    /* media query */
+    @media(min-width: 900px){
+      .engenharia, .farmacia, .matematica {
+        display: inline-block;
+        width: 20%;
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- main>article.*3 -->
+  <main>
+    <article class="engenharia">Engenharia</article>
+    <article class="farmacia">Farmácia</article>
+    <article class="matematica">Matemática</article>
+  </main>
+</body>
+</html>
