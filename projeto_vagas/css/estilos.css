@@ -19,7 +19,10 @@ header img {
 }
 
 .container {
-  width: 1200px;
+  /* esse era um leiaute fixo */
+  /* width: 1200px; */
+  /* esse é um leaiute fluído */
+  width: 100%;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -38,9 +41,18 @@ header img {
 article {
   padding: 12px;
   border: 1px solid #2196F3;
-  width: 380px;
+  /* width: 30%;
   float: left;
-  margin-right: 8px;
+  margin-right: 8px; */
+}
+/* mobile first */
+/* isso é uma media query */
+@media(min-width: 900px){
+  article {
+    width: 30%;
+    float: left;
+    margin-right: 8px;
+  }
 }
 
 article > h2{
