@@ -29,10 +29,18 @@ header img {
   padding: 80px 0;
 }
 
+#vagas::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
 article {
   padding: 12px;
   border: 1px solid #2196F3;
   width: 380px;
+  float: left;
+  margin-right: 8px;
 }
 
 article > h2{
@@ -64,4 +72,18 @@ article > ul > li {
 
 article > footer {
   text-align: center;
+}
+/* material design */
+.botao{
+  display: inline-block;
+  background-color: #1976D2;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+/* isso é uma pseudoclasse */
+.botao:hover, .botao:focus{
+  background-color: #0D47A1;
+  outline: none;
 }
